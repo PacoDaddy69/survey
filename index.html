@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<title>Height v Happiness Survey</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	</head>
+
+<body>
+
+	<h1>Height v Happiness Survey</h1>
+	
+	<form id="height-form">
+		
+		<label for="feet">Feet</label>
+		<input type="number" name="feet" id="feet" min="0" max="7"></input>
+		
+			<br>
+		
+		<label for="inches">Inches</label>
+		<input type="number" name="inches" id="inches" min="0" max="12"></input>
+		
+		<p>Rate your happiness from 0 to 10. 0 = ;_; 10 = :D</p>
+		<label for="happiness">Happiness</label>
+		<input type="number" name="happiness" id="happiness" min="0" max="10"></input>
+		
+			<br>
+			
+		<input type="submit"></input>
+		
+			<br>
+			
+		<h1>Answers Submitted: <span id="submissions"></span></h1>
+		
+		<h1>Average Happiness: <span id="avgHappiness"></span></h1>
+		
+		<h1>Average Height: <span id="avgHeight"></span>"</h1>
+	
+	</form>
+
+	<script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="script.js"></script>
+	
+</body>
+
+</html>
